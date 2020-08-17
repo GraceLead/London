@@ -42,6 +42,17 @@ $ yarn install
 $ yarn dev
 ```
 
+You might see this error
+```bash
+$ error gscan@3.5.6: The engine "node" is incompatible with this module. Expected version "^10.13.0 || ^12.10.0". Got "13.7.0"
+```
+If you have nvm installed, just install the correct version and run the install again
+```bash
+$ nvm install 10.13.0
+$ yarn install
+$ yarn dev
+```
+
 Now you can edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically.
 
 The `zip` Gulp task packages the theme files into `dist/<theme-name>.zip`, which you can then upload to your site.
